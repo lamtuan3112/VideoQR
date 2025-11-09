@@ -3,41 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video của tôi</title>
+  <title>Xem video trực tiếp</title>
   <style>
     body {
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       background-color: #000;
       color: white;
-      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
     }
-    h1 {
-      margin-bottom: 20px;
-      font-size: 1.5rem;
-    }
-    iframe {
+    video {
       width: 90%;
-      max-width: 900px;
-      height: 506px;
-      border: none;
+      max-width: 800px;
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255,255,255,0.3);
     }
   </style>
 </head>
 <body>
-  <h1>🎬 Video YouTube của tôi</h1>
-  <iframe
-    src="https://www.youtube.com/embed/54pfTov858U"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
+  <h2>🎥 Video của tôi</h2>
+  <video controls autoplay>
+    <source src="myvideo.mp4" type="video/mp4">
+    Trình duyệt của bạn không hỗ trợ video.
+  </video>
 </body>
 </html>
